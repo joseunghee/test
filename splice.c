@@ -1,22 +1,4 @@
-/*
- * "splice": joining two ropes together by interweaving their strands.
- *
- * This is the "extended pipe" functionality, where a pipe is used as
- * an arbitrary in-memory buffer. Think of a pipe as a small kernel
- * buffer that you can use to transfer data from one end to the other.
- *
- * The traditional unix read/write is extended with a "splice()" operation
- * that transfers data buffers to or from a pipe buffer.
- *
- * Named by Larry McVoy, original implementation from Linus, extended by
- * Jens to support splicing to files, network, direct splicing, etc and
- * fixing lots of bugs.
- *
- * Copyright (C) 2005-2006 Jens Axboe <axboe@kernel.dk>
- * Copyright (C) 2005-2006 Linus Torvalds <torvalds@osdl.org>
- * Copyright (C) 2006 Ingo Molnar <mingo@elte.hu>
- *
- */
+
 #include <linux/fs.h>
 #include <linux/file.h>
 #include <linux/pagemap.h>
